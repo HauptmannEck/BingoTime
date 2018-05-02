@@ -6,9 +6,11 @@ script:
   - npm test
 after_success:
   - npm run build
+before_deploy:
+  - zip -r build build
 deploy:
   skip_cleanup: true
-  zip_file: './build'
+  zip_file: 'build.zip'
   provider: elasticbeanstalk
   access_key_id: $ACCESSKEYID
   secret_access_key:

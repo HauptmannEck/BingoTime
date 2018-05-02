@@ -2,6 +2,7 @@
   "name": "bingo-time",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/public",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
