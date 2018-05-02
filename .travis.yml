@@ -7,6 +7,8 @@ script:
 after_success:
   - npm run build
 deploy:
+  skip_cleanup: true
+  zip_file: './build'
   provider: elasticbeanstalk
   access_key_id: $ACCESSKEYID
   secret_access_key:
