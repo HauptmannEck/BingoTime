@@ -1,0 +1,12 @@
+{
+  "name": "bingo-time-server",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "NODE_ENV=test",
+    "build": "NODE_ENV=prod"
+  },
+  "dependencies": {
+    "express": "latest"
+  }
+}
