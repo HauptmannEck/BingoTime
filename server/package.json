@@ -4,7 +4,8 @@
   "scripts": {
     "start": "nodemon server.js",
     "test": "NODE_ENV=test",
-    "build": "NODE_ENV=prod"
+    "build": "NODE_ENV=prod",
+    "precommit": "npm test"
   },
   "dependencies": {
     "express": "latest"

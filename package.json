@@ -10,10 +10,12 @@
     "server:build": "cd server && npm run build",
     "postinstall": "cd client && npm i && cd ../server && npm i",
     "start": "concurrently --kill-others-on-fail \"npm run server:dev\" \"npm run client:dev\"",
-    "test":  "cd client && npm run precommit && cd ../server && npm run test",
-    "build": "node scripts/build.js"
+    "test": "cd client && npm run precommit && cd ../server && npm run test",
+    "build": "node scripts/build.js",
+    "precommit": "cd client && npm run precommit && cd ../server && npm run precommit"
   },
   "devDependencies": {
-    "concurrently": "^3.5.0"
+    "concurrently": "^3.5.0",
+    "husky": "^0.14.3"
   }
 }
