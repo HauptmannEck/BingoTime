@@ -1,0 +1,1 @@
+This is the Bingo Time root, which is used to control the client and server code.
