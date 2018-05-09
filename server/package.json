@@ -8,6 +8,7 @@
     "precommit": "npm test"
   },
   "dependencies": {
-    "express": "latest"
+    "express": "latest",
+    "lodash": "^4.17.10"
   }
 }

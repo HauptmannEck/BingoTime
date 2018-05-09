@@ -4,9 +4,9 @@ import Toolbar from 'material-ui/Toolbar';
 import IconButton from 'material-ui/IconButton';
 import Icon from 'material-ui/Icon';
 import Typography from 'material-ui/Typography';
-import Grid from 'material-ui/Grid';
+import Board from './board';
 import styles from './styles.less';
-import JSS from "../jss";
+import JSS from '../jss';
 
 class App extends Component {
 	render() {
@@ -26,17 +26,12 @@ class App extends Component {
 							</IconButton>
 						</Toolbar>
 					</AppBar>
-					<Grid container spacing={16} className={styles.root}>
-						<Grid item xs={6}>
-							LEFT
-						</Grid>
-						<Grid item xs={6}>
-							Right
-						</Grid>
-						<Grid item xs={12} style={{textAlign: 'center'}}>
-							Bingo Time is mine not yours 2018
-						</Grid>
-					</Grid>
+					<div className={styles.root}>
+						<Board />
+					</div>
+					<div className={styles.footer}>
+						Bingo Time is mine not yours 2018
+					</div>
 				</Fragment>
 			</JSS>
 		);

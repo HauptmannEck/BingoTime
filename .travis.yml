@@ -7,7 +7,9 @@ script:
 after_success:
   - npm run build
 before_deploy:
-  - zip -r build build
+  - cd build
+  - zip -r build * .[^.]*
+  - cd ..
 deploy:
   skip_cleanup: true
   zip_file: 'build.zip'
